@@ -179,10 +179,54 @@ footer .copyright{
 }
 footer .social{
     grid-column: 7/9;
+    display: flex;
+    justify-content: flex-end;
+    /* margin: 0 auto; */
 }
+footer li{
+    margin: 0 6px;
+}
+footer img{
+    width:20px;
+}
+
 /* tablet styles  */
 @media only screen  and (min-width : 620px) {
-    
+    .welcome-text{
+        grid-column: 1/5;
+    }
+    .welcome-img{
+        /* width: 200%; */
+        grid-column: 5/9;
+    }
+    .welcome-img img{
+        width: 100%;
+    }
+    .projects{
+        margin-top: 40px;
+    }
+    .projects a{
+        grid-column: span 4 ;
+        display: block;
+        margin : 20px 0px;
+    }
+    .projects a:last-child{
+        grid-column: 3/7;
+    }
+    .projects a *{
+        margin: 10px 20%;
+        max-width: 60%;
+    }
+    .projects h4{
+        text-align: center;
+    }
+    #skill{
+        padding: 30px 100px ;
+    }
+    footer{
+        background-size: 20%;
+    }
+
 }
 
 /* large tablets and laptop  */
@@ -199,11 +243,3 @@ footer .social{
     body{
         font-size: 20px;
     }}
-
-    /*
-    grid testing*/
-
-    .projects{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
-    }
